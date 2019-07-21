@@ -268,5 +268,6 @@ public class OnClassExercise {
 
 		String str = "adc";
 		System.out.println(str.length());
+		System.out.println("QQ输入法导致git客户端报错");
 	}
 }
