@@ -6,7 +6,7 @@
  * @author: 金聖聰   
  * @date: 2019年7月24日 上午8:37:46 
  */
-package kh75.day190724.foodieleague.ui;
+package kh75.day190724.source;
 
 import java.util.Scanner;
 
@@ -232,6 +232,9 @@ public class FoodieOfLeagueOS {
 									+ ((orderStatus[i] == 0) ? "已预订" : "已完成"));
 						}
 					}
+					if(orderNames[0]== null){
+						System.out.println("                            空                                                             ");
+					}
 					System.out.println("----------------------------");
 					// 判断是否为0方法
 					isZero();
@@ -378,11 +381,11 @@ public class FoodieOfLeagueOS {
 					break;// 不加break 会走default
 
 				default:// 不在1-6之间
-					System.out.println("输入非法,再见1!");
+					System.out.println("输入非法,再见!");
 					flag = false;
 				}
 			} else {// 不合法
-				System.out.println("输入非法,再见2!");
+				System.out.println("输入非法,再见!");
 				flag = false;
 			}
 		} while (flag);
