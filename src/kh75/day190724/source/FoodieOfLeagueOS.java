@@ -125,7 +125,6 @@ public class FoodieOfLeagueOS {
 					// TODO 订餐人
 					for (int i = 0; i < orderNames.length; i++) {
 						if (orderNames[i] == null) {
-							//
 							index = i;
 							isSave = true;
 							break;
@@ -206,7 +205,7 @@ public class FoodieOfLeagueOS {
 						orderDishNamesAndNums[index] = orderInfo;
 						orderTimes[index] = orderTime;
 						orderAddresses[index] = orderAddress;
-						// TODO
+						
 						double orderPrice = dishPrices[dishNum - 1] * orderNum;
 						// 配送费
 						double deliveryPrice = orderPrice >= 50 ? 0 : 5;
@@ -317,7 +316,6 @@ public class FoodieOfLeagueOS {
 									// 1.循环遍历全部订单,为签收状态才能删,否则不可删 0"已预订" :1 "已完成"
 									// 循环遍历订单,为0的时候才能签收
 								if (orderStatus[deleteNo - 1] != 0) {// 能删除
-									// TODO
 									// 把后面的订单信息全移到这个位置**deleteNo-1**(循环),并把本来最后一位不为空的置空
 									for (int i = deleteNo - 1; i < maxLengths; i++) {
 										orderNames[i] = orderNames[i + 1];
