@@ -122,7 +122,7 @@ public class FoodieOfLeagueOS {
 					// 1.先遍历,哪里空的填哪里,用订单名子就行,从而获得index
 					int index = -1;
 					boolean isSave = false;
-					// TODO 订餐人
+					// 订餐人
 					for (int i = 0; i < orderNames.length; i++) {
 						if (orderNames[i] == null) {
 							index = i;
@@ -135,7 +135,7 @@ public class FoodieOfLeagueOS {
 						System.out.println("订单饱满,添加失败!");
 					} else {// 成功,存入订单信息
 						System.out.println("***我要订餐***");
-						// TODO 把输入的数据放到数组第一个为空的地方
+						// 把输入的数据放到数组第一个为空的地方
 						// 输入数据
 						System.out.print("请输入订餐人姓名:");
 						String orderName = in.next();
@@ -197,7 +197,7 @@ public class FoodieOfLeagueOS {
 						}
 						System.out.print("输入送餐地址:");
 						String orderAddress = in.next();
-						// TODO 存档
+						// 存档
 						orderNames[index] = orderName;
 						String orderDishName = dishNames[dishNum - 1];
 						int orderDishNum = orderNum;
@@ -213,7 +213,7 @@ public class FoodieOfLeagueOS {
 
 						System.out.println("订餐成功");
 						System.out.println("----------------------------");
-						// TODO 打印输入的信息,在此之前先存档
+						// 打印输入的信息,在此之前先存档
 						System.out.println("您输入的是:" + orderInfo + "\n送餐时间:" + orderTime + "点\n" + "餐费:" + orderPrice
 								+ "元,送餐费:" + deliveryPrice + "元,总计:" + orderSumPrices[index] + "元.");
 					}
@@ -222,7 +222,7 @@ public class FoodieOfLeagueOS {
 					break;
 				case 2:
 					System.out.println("***查看餐袋***");
-					// TODO 遍历已有订单信息
+					// 遍历已有订单信息
 					System.out.println("序号\t订餐人\t餐品信息\t送餐时间\t送餐地址\t总金额\t订单状态");
 					for (int i = 0; i < orderNames.length; i++) {
 						if (orderNames[i] != null) {// 不为空

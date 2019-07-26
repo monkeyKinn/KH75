@@ -35,7 +35,6 @@ public class OrderFoodUI {
 		// 1.先遍历,哪里空的填哪里,用订单名子就行,从而获得index
 		int index = -1;
 		boolean isSave = false;
-		// TODO 订餐人
 		for (int i = 0; i < DataSource.orderNames.length; i++) {
 			if (DataSource.orderNames[i] == null) {
 				//
@@ -49,7 +48,6 @@ public class OrderFoodUI {
 			System.out.println("订单饱满,添加失败!");
 		} else {// 成功,存入订单信息
 			System.out.println("***我要订餐***");
-			// TODO 把输入的数据放到数组第一个为空的地方
 			// 输入数据
 			System.out.print("请输入订餐人姓名:");
 			String orderName = in.next();
@@ -108,7 +106,7 @@ public class OrderFoodUI {
 			}
 			System.out.print("输入送餐地址:");
 			String orderAddress = in.next();
-			// TODO 存档
+			//存档
 			DataSource.orderNames[index] = orderName;
 			String orderDishName = DataSource.dishNames[dishNum - 1];
 			int orderDishNum = orderNum;
@@ -116,7 +114,6 @@ public class OrderFoodUI {
 			DataSource.orderDishNamesAndNums[index] = orderInfo;
 			DataSource.orderTimes[index] = orderTime;
 			DataSource.orderAddresses[index] = orderAddress;
-			// TODO
 			double orderPrice = DataSource.dishPrices[dishNum - 1] * orderNum;
 			// 配送费
 			double deliveryPrice = orderPrice >= 50 ? 0 : 5;
@@ -124,7 +121,6 @@ public class OrderFoodUI {
 
 			System.out.println("订餐成功");
 			System.out.println("----------------------------");
-			// TODO 打印输入的信息,在此之前先存档
 			System.out.println("您输入的是:" + orderInfo + "\n送餐时间:" + orderTime + "点\n" + "餐费:" + orderPrice + "元,送餐费:"
 					+ deliveryPrice + "元,总计:" + DataSource.orderSumPrices[index] + "元.");
 		}

@@ -29,7 +29,7 @@ public class ViewMealBagsUI {
 	public void doMyWork(){
 
 		System.out.println("***查看餐袋***");
-		// TODO 遍历已有订单信息
+		//遍历已有订单信息
 		System.out.println("序号\t订餐人\t餐品信息\t送餐时间\t送餐地址\t总金额\t订单状态");
 		for (int i = 0; i < DataSource.orderNames.length; i++) {
 			if (DataSource.orderNames[i] != null) {// 不为空

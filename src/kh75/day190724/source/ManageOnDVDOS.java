@@ -101,7 +101,7 @@ public class ManageOnDVDOS {
 						System.out.print("请输入DVD名称:");
 						String name = in.next();
 						System.out.println("新增<<" + name + ">>成功");
-						// TODO 存档 默认可借 默认没接触日期和次数
+						//存档 默认可借 默认没接触日期和次数
 						names[index] = name;
 					}
 					isZero();
@@ -204,7 +204,6 @@ public class ManageOnDVDOS {
 									// 1:不可以,默认0 可以
 									// 循环遍历DVD单,为0的时候才能借出
 								if (loanable[loanNo - 1] != 1) {// 能借
-									// TODO 输入日期
 									System.out.print("输入日期(1-31):");
 									// 判断日期合法性
 

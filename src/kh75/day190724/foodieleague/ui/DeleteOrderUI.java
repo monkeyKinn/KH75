@@ -59,7 +59,6 @@ public class DeleteOrderUI {
 						// 1.循环遍历全部订单,为签收状态才能删,否则不可删 0"已预订" :1 "已完成"
 						// 循环遍历订单,为0的时候才能签收
 					if (DataSource.orderStatus[deleteNo - 1] != 0) {// 能删除
-						// TODO
 						// 把后面的订单信息全移到这个位置**deleteNo-1**(循环),并把本来最后一位不为空的置空
 						for (int i = deleteNo - 1; i < maxLengths; i++) {
 							DataSource.orderNames[i] = DataSource.orderNames[i + 1];

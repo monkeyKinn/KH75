@@ -13,7 +13,7 @@ import kh75.day190724.foodieleague.ui.MainMenuUI;
 /**   
 * Copyright: Copyright (c) 2019 金聖聰
 * 
-* @ClassName: FoodieOfLeagueO2O.java
+* @ClassName: FoodieOfLeagueOOP.java
 * @Description: 吃货联盟测试类
 *
 * @version: v1.0.0
@@ -25,7 +25,7 @@ import kh75.day190724.foodieleague.ui.MainMenuUI;
 *---------------------------------------------------------*
 * 2019年7月24日     金聖聰           v1.0.0               代码重构
 */
-public class FoodieOfLeagueO2O {
+public class FoodieOfLeagueOOP {
 	public static void main(String[] args) {
 		new MainMenuUI();
 	}
