@@ -44,7 +44,7 @@ public class AfterSchoolExercises {
 					2. 如果这个年份能够被100 整除，则这个数必须要能被400 整除，才是闰 年。
 											例如，2000 年是闰年，1900 年不是闰年。
 		 */
-		// test3();
+		 test3();
 
 		/**
 		 * switch:
@@ -70,7 +70,7 @@ public class AfterSchoolExercises {
 		// 9. 输入一个数组，向其插入一个数保存并输出
 		// test9();
 		// If:读入三个整数，输出这三个整数中最大的一个。
-		 test10();
+		// test10();
 	}
 
 	/**   
@@ -275,9 +275,9 @@ public class AfterSchoolExercises {
 				nums[i] = in.nextInt();
 			} else {// 不是int
 				System.out.println("Input Error!\nSee U~");
+				return;
 			}
 		}
-		// TODO
 		for (int i = 0; i < nums.length - 1; i++) {
 			for (int j = 0; j < nums.length - 1 - i; j++) {
 				if (nums[i] < nums[i + 1]) {
@@ -316,7 +316,7 @@ public class AfterSchoolExercises {
 		if (in.hasNextInt()) {// 是int
 
 			num1 = in.nextInt();
-			System.out.print("请输入第二个数");
+			System.out.print("请输入第二个数:");
 			// 判断是否合法
 			if (in.hasNextInt()) {// 是int
 				num2 = in.nextInt();
@@ -358,7 +358,6 @@ public class AfterSchoolExercises {
 		} else {// 不是int
 			System.out.println("Input Error!\nSee U~");
 		}
-
 	}
 
 	/**   
@@ -384,6 +383,10 @@ public class AfterSchoolExercises {
 		// 判断是否合法
 		if (in.hasNextInt()) {// 是int
 			int num = in.nextInt();
+			if(num<=0){
+				System.out.println("Input Error!\nSee U~");
+				return;
+			}
 			boolean isRun = ((num % 4 == 0) && (num % 100 != 0)) || ((num % 100 == 0) && (num % 400 == 0));
 			// 1 是 2不是
 			int isRuns = isRun ? 1 : 2;

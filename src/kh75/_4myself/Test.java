@@ -29,11 +29,111 @@ public class Test {
 	public static void main(String[] args) {
 		// isLuck();
 		// compares();
-		 change2Num();
+		// change2Num();
 		// testNextLine();
 		// testLoop();
-//		testSum();
+		// testSum();
+		// test1();
+		test2();
 		System.exit(0);
+
+	}
+
+	/**   
+	* @Function: Test.java
+	* @Description: java5对数组的支持(可变参数)
+	*
+	* @param:描述1描述
+	* @return：返回结果描述
+	* @throws：异常描述
+	*
+	* @version: v1.0.0
+	* @author: 金聖聰
+	* @date: 2019年7月27日 下午12:06:23 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2019年7月27日     金聖聰           v1.0.0               修改原因
+	*/
+	private static void test2() {
+		Scanner in = new Scanner(System.in);
+		System.out.print("输入第1个数");
+		int a = in.nextInt();
+		System.out.print("输入第2个数");
+		int b = in.nextInt();
+		System.out.print("输入第3个数");
+		int c = in.nextInt();
+		System.out.println("和为"+getSum(a,b,c));
+	}
+
+	/**   
+	* @Function: Test.java
+	* @Description: 该函数的功能描述
+	*
+	* @param:描述1描述
+	* @return：返回结果描述
+	* @throws：异常描述
+	*
+	* @version: v1.0.0
+	* @author: 金聖聰
+	* @date: 2019年7月27日 下午4:42:22 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2019年7月27日     金聖聰           v1.0.0               修改原因
+	*/
+	private static int getSum(int ... in ) {
+		int sum = 0;
+		for (int i : in) {
+			sum += i;
+		}
+		return sum;
+	}
+
+	/**   
+	* @Function: Test.java
+	* @Description: 输入8位编号,若各位之和能被7整除,中奖
+	*
+	* @param: null
+	* @return：void
+	* @throws：null
+	*
+	* @version: v1.0.0
+	* @author: 金聖聰
+	* @date: 2019年7月27日 上午11:48:27 
+	*
+	* Modification History:
+	* Date         Author          Version            Description
+	*---------------------------------------------------------*
+	* 2019年7月27日     金聖聰           v1.0.0               修改原因
+	*/
+	private static void test1() {
+		Scanner input = new Scanner(System.in);
+		System.out.print("请输入8位数字:");
+		int nums = input.nextInt();
+		// 判断是不是8位
+		// 1.转成string
+		String numStr = String.valueOf(nums);
+		if (numStr.length() == 8) {// 是8
+			int sum = 0;
+			// 循环分解各位数字
+			for (int i = 0; i < numStr.length(); i++) {// 8888_8888
+				int a = nums % 10;
+				nums = nums / 10;
+				sum += a;
+			}
+			System.out.print(sum);
+			if (sum % 7 == 0) {
+				System.out.println("中奖");
+			} else {
+				System.out.println("再接再厉!");
+			}
+		} else {
+			System.out.println("See u");
+		}
+		input.close();
 	}
 
 	/**   
@@ -253,18 +353,15 @@ public class Test {
 		a = a ^ b;
 		System.out.println(a + "," + b);*/
 
-//		// 99乘法表
-//		for (int i = 1; i <= 9; i++) {// 第二个数
-//			for (int j = 1; j <= i; j++) {// j第一个数
-//				System.out.print(j + "*" + i + "=" + j * i + "\t");
-//			}
-//			System.out.println();
-//
-//		}
-		
+		// // 99乘法表
+		// for (int i = 1; i <= 9; i++) {// 第二个数
+		// for (int j = 1; j <= i; j++) {// j第一个数
+		// System.out.print(j + "*" + i + "=" + j * i + "\t");
+		// }
+		// System.out.println();
+		//
+		// }
 		System.out.println(Integer.MAX_VALUE);
 		System.out.println(Integer.MIN_VALUE);
-		
-		
 	}
 }

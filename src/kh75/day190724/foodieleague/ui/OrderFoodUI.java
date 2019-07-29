@@ -11,7 +11,6 @@ package kh75.day190724.foodieleague.ui;
 import java.util.Scanner;
 
 import kh75.day190724.foodieleague.data.DataSource;
-import kh75.day190724.foodieleague.utils.MyUtils;
 
 /**   
 * Copyright: Copyright (c) 2019 金聖聰

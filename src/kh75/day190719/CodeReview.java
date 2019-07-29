@@ -63,7 +63,6 @@ public class CodeReview {
 		} else {
 			System.out.println("b is bigger");
 		}
-
 	}
 
 }
