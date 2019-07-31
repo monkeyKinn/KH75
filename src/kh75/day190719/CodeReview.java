@@ -8,6 +8,8 @@
  */
 package kh75.day190719;
 
+import static org.junit.Assert.*;
+
 import java.util.Scanner;
 
 import org.junit.Test;
@@ -62,6 +64,19 @@ public class CodeReview {
 			System.out.println("a is Bigger");
 		} else {
 			System.out.println("b is bigger");
+		}
+	}
+	@Test
+	public void testInter() {
+		int maxValue = Integer.MAX_VALUE;
+		maxValue += 1;
+		int minValue = Integer.MIN_VALUE;
+		System.out.print(maxValue == minValue );
+		System.out.println("----------------------------");
+		if (maxValue - minValue>0){
+			System.out.print("Max 大");
+		}else {
+			System.out.print("Min 大");
 		}
 	}
 

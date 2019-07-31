@@ -24,5 +24,5 @@ package kh75.day190719.afterschool_exercise;
 * 2019年7月19日     金聖聰           v1.0.0               修改原因
 */
 public class AfterSchoolExercises {
-
+	int a;
 }
