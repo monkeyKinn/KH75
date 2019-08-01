@@ -24,15 +24,41 @@ package kh75.day190730.class_test.entity;
 * 2019年7月30日     金聖聰           v1.0.0               修改原因
 */
 public class Dog {
-	private String name = "旺财";
-	private int health = 100;
-	private int love = 20;
-	private String strain = "拉布拉多犬";
+	private String name;
+	private int health;
+	private int love;
+	private String strain;
+
+	/**   
+	* @Function: Dog.java
+	* @Description: 空构造
+	*
+	* @param:　null
+	* @version: v1.0.0
+	* @author: 金聖聰
+	* @date: 2019年7月30日 下午12:22:45 
+	*/
+	public Dog() {
+		this.name = "旺财";
+		this.health = 100;
+		this.love = 20;
+		this.strain = "拉布拉多犬";
+	}
+
+	public Dog(String name,int health,int love, String strain){
+		this.name = name;
+		this.health = health;
+		this.love = love;
+		this.strain = strain;
+	}
+	
 
 	public void print() {
 		System.out
 				.println("我的名字叫" + getName() + ",健康值是" + getHealth() + ",和主人的亲密度是" + getLove() + ",我是一只" + getStrain());
 	}
+
+
 
 	/**
 	 * @param name the name to set
@@ -65,19 +91,6 @@ public class Dog {
 	 */
 	public void setStrain(String strain) {
 		this.strain = strain;
-	}
-
-	/**   
-	* @Function: Dog.java
-	* @Description: 空构造
-	*
-	* @param:　null
-	* @version: v1.0.0
-	* @author: 金聖聰
-	* @date: 2019年7月30日 下午12:22:45 
-	*/
-	public Dog() {
-
 	}
 
 	/**
