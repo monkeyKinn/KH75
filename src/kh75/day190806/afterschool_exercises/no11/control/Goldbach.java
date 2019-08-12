@@ -81,7 +81,6 @@ public class Goldbach {
 		}
 	}
 
-	//TODO 给copy赋值(成对)
 	private void setData(){
 		//在a[]中寻找质数
 		for (int i = 0; i < a.length; i++) {

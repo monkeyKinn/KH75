@@ -62,7 +62,6 @@ public class CommonHandset extends Handset implements PlayWiring{
 	*/
 	@Override
 	public void play(String content) {
-		// TODO Auto-generated method stub
 		System.out.println(content);
 	}
 

@@ -41,7 +41,6 @@ public class Program {
 		ps[1] = new Dancer();
 		ps[2] = new Player();
 	}
-	//TODO 为Program 增加一个show 方法，在这个方法中，调用所有表演这个节目的所有Performer 的 perform 方法
 	public void show(){
 		for (IPerformerable iPerformerable : ps) {
 			iPerformerable.perform();
