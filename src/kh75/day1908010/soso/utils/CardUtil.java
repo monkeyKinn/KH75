@@ -364,7 +364,7 @@ public enum CardUtil {
 		sb.append("您的卡号:" + mc.getCardNumber() + ",当月账单:\n");
 		sb.append("套餐资费:" + mc.getServicePackage().getPrice() + "元\n");
 		sb.append("合计:" + dataFormart(mc.getConsumAmount()) + "元\n");
-		sb.append("账户余额:" + dataFormart(mc.getMoney()));
+		sb.append("账户余额:" + dataFormart(mc.getMoney())+ "元\n");
 		System.out.println(sb);
 	}
 
@@ -731,7 +731,10 @@ public enum CardUtil {
 					// 添加一条消费记录
 					addConsumInfo(moblieNumber, new ConsumInfo(moblieNumber, scene.getType(), temp));
 					break;
+				}else {
+					System.out.println("想发打电话,该套餐没有打电话套餐~");
 				}
+				break;
 			case 2:
 			case 3:
 				if (pack instanceof ISendService) {// 判断是否实现了该功能
@@ -746,13 +749,15 @@ public enum CardUtil {
 					// 添加一条消费记录
 					addConsumInfo(moblieNumber, new ConsumInfo(moblieNumber, scene.getType(), temp));
 					break;
+				}else {
+					System.out.println("想发短信,但是该套餐没有发短信套餐~");
 				}
 
 				break;
 			case 4:
 			case 5:
 				if (pack instanceof INetService) {// 判断是否实现了该功能
-					// 执行通话方法
+					// 执行上网方法
 					System.out.println(scene.getDescription());
 					INetService netService = (INetService) pack;
 					try {
@@ -763,6 +768,8 @@ public enum CardUtil {
 					// 添加一条消费记录
 					addConsumInfo(moblieNumber, new ConsumInfo(moblieNumber, scene.getType(), temp));
 					break;
+				}else {
+					System.out.println("想上网,该套餐没有上网功能~");
 				}
 				break;
 			}
