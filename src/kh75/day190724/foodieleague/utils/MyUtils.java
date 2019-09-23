@@ -28,7 +28,6 @@ import java.util.Scanner;
 public enum MyUtils {
 	INSTANCE;
 	Scanner in = new Scanner(System.in);
-
 	/**
 	 * 
 	* @Function: MyUtils.java

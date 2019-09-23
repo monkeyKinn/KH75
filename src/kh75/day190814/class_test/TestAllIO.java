@@ -31,13 +31,14 @@ import java.io.OutputStream;
 */
 public class TestAllIO {
 	public static void main(String[] args) {
-		try (InputStream fis = new FileInputStream("D:/金圣聪.java");
-				OutputStream fos = new FileOutputStream("D:/金圣聪_new.java")) {
+		try (InputStream fis = new FileInputStream("E:/金圣聪.java");
+				OutputStream fos = new FileOutputStream("E:/金圣聪_new.java")) {
 			int data = 0;
 			byte[] b = new byte[1024];
 			while ((data = fis.read(b)) != -1) {
 				fos.write(b, 0, data);
 			}
+			System.out.println("复制成功");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

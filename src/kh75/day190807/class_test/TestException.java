@@ -8,8 +8,6 @@
  */
 package kh75.day190807.class_test;
 
-import static org.junit.Assert.*;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

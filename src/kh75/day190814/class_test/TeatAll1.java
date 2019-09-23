@@ -35,11 +35,11 @@ import java.io.Writer;
 public class TeatAll1 {
 	public static void main(String[] args) {
 		try (// 创建文件读入流
-				Reader reader = new FileReader("/KH75/李知恩4.jpg");
+				Reader reader = new FileReader("李知恩4.jpg");
 				// 创建缓冲读入流
 				BufferedReader bufferedReader = new BufferedReader(reader);
 				// 创建文件写出流
-				Writer writer = new FileWriter("/KH75/李知恩4_new.jpg");
+				Writer writer = new FileWriter("李知恩4_new.jpg");
 				// 创建缓冲写出流
 				BufferedWriter b = new BufferedWriter(writer);) {
 

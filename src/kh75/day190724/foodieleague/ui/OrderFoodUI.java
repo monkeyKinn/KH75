@@ -36,7 +36,6 @@ public class OrderFoodUI {
 		boolean isSave = false;
 		for (int i = 0; i < DataSource.orderNames.length; i++) {
 			if (DataSource.orderNames[i] == null) {
-				//
 				index = i;
 				isSave = true;
 				break;

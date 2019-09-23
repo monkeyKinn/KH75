@@ -29,13 +29,13 @@ public class Test {
 	public static void main(String[] args) {
 		// isLuck();
 		// compares();
-		// change2Num();
+//		 change2Num();
 		// testNextLine();
 		// testLoop();
 		// testSum();
 		// test1();
-		test2();
-		System.exit(0);
+//		test2();
+//		System.exit(0);
 
 	}
 
@@ -353,15 +353,13 @@ public class Test {
 		a = a ^ b;
 		System.out.println(a + "," + b);*/
 
-		// // 99乘法表
-		// for (int i = 1; i <= 9; i++) {// 第二个数
-		// for (int j = 1; j <= i; j++) {// j第一个数
-		// System.out.print(j + "*" + i + "=" + j * i + "\t");
-		// }
-		// System.out.println();
-		//
-		// }
-		System.out.println(Integer.MAX_VALUE);
-		System.out.println(Integer.MIN_VALUE);
+		// 99乘法表
+		for (int i = 1; i <= 9; i++) {// 第二个数
+			for (int j = 1; j <= i; j++) {// j第一个数
+				System.out.print(j + "*" + i + "=" + j * i + "\t");
+			}
+			System.out.println();
+
+		}
 	}
 }

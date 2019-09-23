@@ -43,6 +43,5 @@ public class ViewMealBagsUI {
 			System.out.println("                            空                                                             ");
 		}
 		System.out.println("----------------------------");
-	
 	} 
 }

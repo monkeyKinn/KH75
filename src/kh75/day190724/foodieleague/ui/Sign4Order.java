@@ -59,7 +59,7 @@ public class Sign4Order {
 					break;
 				} else {// 有订单
 						// 用signNo操作
-						// 1.循环遍历全部订单,为签收状态才能删,否则不可删 0"已预订" :1 "已完成"
+						// 1.循环遍历全部订单,为已预定状态才能签收,否则不可签收 0"已预订" :1 "已完成"
 						// 循环遍历订单,为0的时候才能签收
 					if (DataSource.orderStatus[signNo - 1] == 0) {// 能 签收
 						DataSource.orderStatus[signNo - 1] = 1;
@@ -73,6 +73,5 @@ public class Sign4Order {
 				in.next();
 			}
 		}
-	
 	}
 }
